@@ -19,13 +19,6 @@ class Obfuscate:
     def to_binary(self, string):
         return "".join(format(ord(i), "08b") for i in string)
 
-    ## loading .py file
-    # def load_file(self):
-    #     with open(self.file, "r") as input_file:
-    #         self.code_data = input_file.readlines()
-    #         self.code_data = [line.replace("\n", "") for line in self.code_data]
-    #         return self.code_data
-
     ## search, save and obfuscate function names
     def obfuscate_func_names(self, binary_obfuscation=False):
 
@@ -120,7 +113,6 @@ class Obfuscate:
 
 
 if __name__ == "__main__":
-    test = Obfuscate("main.py")
-    #test.load_file()
+    test = Obfuscate(".examplepy")
     test.obfuscate_func_names()
     test.obfuscate_var_names()
