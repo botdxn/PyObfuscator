@@ -120,7 +120,7 @@ class Obfuscate:
 
 
 if __name__ == "__main__":
-    test = Obfuscate(".example.py")
+    test = Obfuscate("main.py")
     #test.load_file()
     test.obfuscate_func_names()
     test.obfuscate_var_names()
