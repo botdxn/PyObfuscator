@@ -3,12 +3,11 @@ from obfuscate import Obfuscate
 
 
 class TestObfuscate(unittest.TestCase):
-    def test_load_file(self):
+    def test_init(self):
         t = Obfuscate(".example.py")
-        t_file = t.load_file()
 
-        self.assertTrue(type(t_file) is list)
-        self.assertTrue(len(t_file) > 0)
+        self.assertTrue(type(t.code_data) is list)
+        self.assertTrue(len(t.code_data) > 0)
 
     # def test_generate_strings(self):
 
