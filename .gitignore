@@ -1,3 +1,6 @@
+.testing.py
+obfuscated*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
